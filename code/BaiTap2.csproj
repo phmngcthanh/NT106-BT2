@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Authors>Phạm Ngọc Thành (19520958)</Authors>
+    <Company>NT106.L21.MMCL</Company>
+    <Description>Thành viên:
+Phạm Ngọc Thành - 19520958
+19520958@gm.uit.edu.vn
+Tính năng:
+Link youtube demo: https://youtu.be/-M6P3ynC8HI
+- Xử lý exception, hiển thị thân thiện với người dùng
+- Xử lý chuyển đổi giữa các form
+Hình ảnh:
+- Có thể duyệt ảnh thông qua nút (trước -sau)
+- Liệt kê các file ảnh trong thư mục
+- Có thể duyệt ảnh thông qua chọn tên ảnh trong danh sách ảnh 
+Xử lý các exception</Description>
+    <PackageLicenseExpression>GNU GENERAL PUBLIC LICENSE v3</PackageLicenseExpression>
+    <Copyright />
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageIcon>logo-uit.png</PackageIcon>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="D:\Downloads\1234\logo-uit.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
